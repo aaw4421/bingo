@@ -19,6 +19,6 @@ app.get("/", (_, res) => {
   res.redirect("/bingo/");
 });
 
-app.listen({port: process.env.PORT ?? 3000}, () => {
+app.listen({host: '0.0.0.0', port: process.env.PORT ?? 3000}, () => {
   console.log(`Server listening on ${process.env.PORT ?? 3000}`);
 });
