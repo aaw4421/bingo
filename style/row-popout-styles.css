@@ -34,6 +34,10 @@
   --tracker-animation-time: var(--row-popout-tracker-animation-time);
 }
 
+body {
+  overflow: auto;
+}
+
 .row-popout.table {
   display: grid;
   grid-template-rows: var(--header-height) repeat(5, 1fr);

@@ -30,6 +30,7 @@
   filter: grayscale(1);
   opacity: 0.6;
   transition: var(--tracker-animation-time) ease;
+  margin: 2px;
 }
 
 .tokens label.hidden {
@@ -44,8 +45,10 @@
 .tokens {
   align-items: center;
   justify-content: center;
-  flex: 1;
+  flex: 1 1 auto;
   max-height: var(--tracker-token-size);
+  max-width: 100%;
+  margin: 2px;
 }
 
 .goal:not(.hide-text) .tokens:first-of-type {
